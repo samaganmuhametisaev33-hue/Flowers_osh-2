@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Home - Гүлдөр дүкөнү</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Green Home</h1>
+
+        <nav>
+            <a href="#home" data-i18n="home">Башкы бет</a>
+            <a href="#products" data-i18n="plants">Өсүмдүктөр</a>
+            <a href="#about" data-i18n="about">Биз жөнүндө</a>
+            <a href="#contact" data-i18n="contact">Байланыш</a>
+
+            <select id="language" aria-label="Тил тандоо">
+                <option value="ky">Кыргызча</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2 data-i18n="heroTitle">
+            Үйүңүзгө жашыл жашоо тартуулаңыз!
+        </h2>
+
+        <p data-i18n="heroText">
+            Кооз үй өсүмдүктөрү жана гүл идиштери бир жерде.
+        </p>
+
+        <a href="#products" class="button" data-i18n="viewProducts">
+            Товарларды көрүү
+        </a>
+    </section>
+
+    <section class="products" id="products">
+        <h2 data-i18n="productsTitle">Биздин товарлар</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500"
+                    alt="Жашыл өсүмдүк"
+                    data-i18n-alt="plantAlt"
+                >
+                <h3 data-i18n="plant1">Жашыл өсүмдүк</h3>
+                <p data-i18n="plant1Text">Үйгө көрк берген кооз гүл.</p>
+                <h4>450 <span data-i18n="currency">сом</span></h4>
+                <a href="#contact" class="button" data-i18n="buy">
+                    Сатып алуу
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=500"
+                    alt="Үй гүлү"
+                    data-i18n-alt="plantAlt2"
+                >
+                <h3 data-i18n="plant2">Үй гүлү</h3>
+                <p data-i18n="plant2Text">Бөлмөгө өзгөчө көрк берет.</p>
+                <h4>600 <span data-i18n="currency">сом</span></h4>
+                <a href="#contact" class="button" data-i18n="buy">
+                    Сатып алуу
+                </a>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500"
+                    alt="Гүл идиши"
+                    data-i18n-alt="potAlt"
+                >
+                <h3 data-i18n="pot">Гүл идиши</h3>
+                <p data-i18n="potText">Гүлдөр үчүн кооз идиш.</p>
+                <h4>250 <span data-i18n="currency">сом</span></h4>
+                <a href="#contact" class="button" data-i18n="buy">
+                    Сатып алуу
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 data-i18n="aboutTitle">Биз жөнүндө</h2>
+
+        <p data-i18n="aboutText">
+            Green Home — үй өсүмдүктөрүн жана гүл идиштерин
+            сунуштаган дүкөн. Биз үйүңүздүн кооз жана жагымдуу
+            болушуна жардам беребиз.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 data-i18n="contactTitle">Байланыш</h2>
+        <p data-i18n="phone">Телефон: +996 700 123 456</p>
+        <p data-i18n="address">Дарек: Ош шаары</p>
+        <p data-i18n="contactText">
+            Бизге келип, өзүңүзгө жаккан гүлдү тандаңыз!
+        </p>
+    </section>
+
+    <footer>
+        <p data-i18n="footer">
+            © 2026 Green Home. Бардык укуктар корголгон.
+        </p>
+    </footer>
+
+    <script>
+        const translations = {
+            ky: {
+                home: "Башкы бет",
+                plants: "Өсүмдүктөр",
+                about: "Биз жөнүндө",
+                contact: "Байланыш",
+                heroTitle: "Үйүңүзгө жашыл жашоо тартуулаңыз!",
+                heroText: "Кооз үй өсүмдүктөрү жана гүл идиштери бир жерде.",
+                viewProducts: "Товарларды көрүү",
+                productsTitle: "Биздин товарлар",
+                plant1: "Жашыл өсүмдүк",
+                plant1Text: "Үйгө көрк берген кооз гүл.",
+                plant2: "Үй гүлү",
+                plant2Text: "Бөлмөгө өзгөчө көрк берет.",
+                pot: "Гүл идиши",
+                potText: "Гүлдөр үчүн кооз идиш.",
+                currency: "сом",
+                buy: "Сатып алуу",
+                aboutTitle: "Биз жөнүндө",
+                aboutText: "Green Home — үй өсүмдүктөрүн жана гүл идиштерин сунуштаган дүкөн. Биз үйүңүздүн кооз жана жагымдуу болушуна жардам беребиз.",
+                contactTitle: "Байланыш",
+                phone: "Телефон: +996 700 123 456",
+                address: "Дарек: Ош шаары",
+                contactText: "Бизге келип, өзүңүзгө жаккан гүлдү тандаңыз!",
+                footer: "© 2026 Green Home. Бардык укуктар корголгон.",
+                plantAlt: "Жашыл өсүмдүк",
+                plantAlt2: "Үй гүлү",
+                potAlt: "Гүл идиши"
+            },
+
+            ru: {
+                home: "Главная",
+                plants: "Растения",
+                about: "О нас",
+                contact: "Контакты",
+                heroTitle: "Добавьте зелени в ваш дом!",
+                heroText: "Красивые комнатные растения и горшки в одном месте.",
+                viewProducts: "Посмотреть товары",
+                productsTitle: "Наши товары",
+                plant1: "Зелёное растение",
+                plant1Text: "Красивое растение для вашего дома.",
+                plant2: "Комнатный цветок",
+                plant2Text: "Придаёт комнате особый уют.",
+                pot: "Цветочный горшок",
+                potText: "Красивый горшок для цветов.",
+                currency: "сом",
+                buy: "Купить",
+                aboutTitle: "О нас",
+                aboutText: "Green Home — магазин комнатных растений и цветочных горшков. Мы помогаем сделать ваш дом красивее и уютнее.",
+                contactTitle: "Контакты",
+                phone: "Телефон: +996 700 123 456",
+                address: "Адрес: город Ош",
+                contactText: "Приходите и выберите цветок по душе!",
+                footer: "© 2026 Green Home. Все права защищены.",
+                plantAlt: "Зелёное растение",
+                plantAlt2: "Комнатный цветок",
+                potAlt: "Цветочный горшок"
+            },
+
+            en: {
+                home: "Home",
+                plants: "Plants",
+                about: "About us",
+                contact: "Contact",
+                heroTitle: "Bring green life into your home!",
+                heroText: "Beautiful houseplants and flower pots in one place.",
+                viewProducts: "View products",
+                productsTitle: "Our products",
+                plant1: "Green plant",
+                plant1Text: "A beautiful plant for your home.",
+                plant2: "Houseplant",
+                plant2Text: "Adds a special touch to your room.",
+                pot: "Flower pot",
+                potText: "A beautiful pot for your plants.",
+                currency: "som",
+                buy: "Buy now",
+                aboutTitle: "About us",
+                aboutText: "Green Home is a shop offering houseplants and flower pots. We help make your home more beautiful and welcoming.",
+                contactTitle: "Contact",
+                phone: "Phone: +996 700 123 456",
+                address: "Address: Osh city",
+                contactText: "Visit us and choose your favourite plant!",
+                footer: "© 2026 Green Home. All rights reserved.",
+                plantAlt: "Green plant",
+                plantAlt2: "Houseplant",
+                potAlt: "Flower pot"
+            }
+        };
+
+        const languageSelect = document.getElementById("language");
+
+        function changeLanguage() {
+            const lang = languageSelect.value;
+            const text = translations[lang];
+
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll("[data-i18n]").forEach(element => {
+                const key = element.getAttribute("data-i18n");
+
+                if (text[key]) {
+                    element.textContent = text[key];
+                }
+            });
+
+            document.querySelectorAll("[data-i18n-alt]").forEach(element => {
+                const key = element.getAttribute("data-i18n-alt");
+
+                if (text[key]) {
+                    element.alt = text[key];
+                }
+            });
+
+            document.title = "Green Home";
+        }
+
+        languageSelect.addEventListener("change", changeLanguage);
+    </script>
+
+</body>
+</html>
